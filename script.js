@@ -2,7 +2,11 @@ const submit = (e) => {
   e.preventDefault();
 
   const answear = document.getElementById("answear");
-  console.log(pitagoras(answear));
+  if (pitagoras(answear)) {
+    window.alert("Prawidłowa odpowiedź!");
+  } else {
+    window.alert("Błędna odpowiedź.");
+  }
 };
 
 const pitagoras = (equation) => {
