@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/7.0.2/math.min.js"></script>
+    <title>Nienawidze geometrii</title>
+  </head>
+  <body>
+    <center>
+      <h1>Nienawidze geometrii</h1>
+      <br />
+      <section>
+        <img
+          src="data:image/png;base64,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"
+          alt="trójkąt prostokątny"
+        />
+      </section>
+      <br />
+      <main>
+        <header>
+          <h4>Pytanie:</h4>
+          <p>podaj twierdzenie pitagorasa</p>
+          <h5>Użyj:</h5>
+          <p>
+            a - przyprostokątna, b - przyprostokątna, c - przeciwprostokątna
+          </p>
+        </header>
+        <form id="answear_form">
+          <input id="answear" type="text" />
+          <button>zatwierdź</button>
+        </form>
+      </main>
+    </center>
+    <script src="script.js"></script>
+  </body>
+</html>
